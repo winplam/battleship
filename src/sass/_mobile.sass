@@ -1,0 +1,45 @@
+// main container (large white area)
+$container-color: #fff
+$container-font: "PT Sans", arial, sans-serif
+$container-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75)
+
+#root
+  background-color: $container-color
+  box-shadow: $container-shadow
+  font-family: $container-font
+  margin: 0 auto 0 auto
+  max-width: 90%
+  min-width: 360px
+  /* parent grid layout */
+  display: grid
+  grid-template-columns: auto auto auto
+  grid-template-rows: auto auto auto 30px auto auto
+  justify-content: center
+
+header
+  grid-column: 2
+  grid-row: 1
+
+nav
+  grid-column: 2
+  grid-row: 2
+
+.playerBoard
+  grid-column: 2
+  grid-row: 3
+
+aside
+  grid-column: 2
+  grid-row: 4
+
+.opponentBoard
+  grid-column: 2
+  grid-row: 5
+
+summary
+  grid-column: 2
+  grid-row: 6
+  /* adjust px value below to control white padding at bottom
+   * of main container. Larger number for higher footer */
+  height: calc(100vh - 870px)
+  min-height: 10px

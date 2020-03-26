@@ -1,0 +1,22 @@
+.boardContainer
+  display: grid
+  height: 352px
+  width: 352px
+  grid-template: 32px 1fr / 32px 1fr
+
+.numbersCaption
+  display: grid
+  grid-template-rows: repeat(10, 1fr)
+  grid-column: 1/2
+  //background-color: rebeccapurple !important
+
+.lettersCaption
+  display: grid
+  grid-template-columns: repeat(10, 1fr)
+  grid-column: 2/3
+
+.captionText
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 16px

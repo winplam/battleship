@@ -1,0 +1,21 @@
+{
+  "BOARD_SIZE": 10,
+  "SHIP_INVENTORY": [
+    {
+      "quantity": 1,
+      "length": 4
+    },
+    {
+      "quantity": 2,
+      "length": 3
+    },
+    {
+      "quantity": 3,
+      "length": 2
+    },
+    {
+      "quantity": 4,
+      "length": 1
+    }
+  ]
+}

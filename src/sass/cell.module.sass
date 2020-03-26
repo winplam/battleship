@@ -1,0 +1,39 @@
+%grid-lines
+  box-shadow: 1px 0 0 0 #8fcaf9, 0 1px 0 0 #8fcaf9, 1px 1px 0 0 #8fcaf9, 1px 0 0 0 #8fcaf9 inset, 0 1px 0 0 #8fcaf9 inset
+
+.playerCell
+  @extend %grid-lines
+
+.opponentCell
+  @extend %grid-lines
+  text-align: center
+  line-height: 32px
+
+  &:hover
+    border: 2px solid red
+    cursor: crosshair
+
+.hitShip
+  align-items: center
+  color: red
+  display: flex
+  font-size: 32px
+  justify-content: center
+
+.missedShip
+  position: relative
+  background-color: #eee
+
+  &::before
+    content: ''
+    height: 5px
+    width: 5px
+    border-radius: 50%
+    background-color: #333
+    // center circle missed marker
+    position: absolute
+    top: 50%
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
