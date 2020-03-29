@@ -18,6 +18,8 @@ I've also used this opportunity to work with ReactJS using functional components
 * Object Oriented Programming (OPP)
 * Model View Controller (MVC)
 
+![Battleship](screenshot.png)
+
 ## Run Locally
 Clone repository
 `git clone git@github.com:winplam/battleship.git`
